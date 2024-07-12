@@ -26,6 +26,7 @@ const MoveGroupToGroup = ({ onSave }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h3>Move Group to Group</h3>
       <div className="mb-3">
         <label className="form-label">Select Group to Move</label>
         <select

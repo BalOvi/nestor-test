@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GroupForm from "../components/GroupForm";
+import GroupHierarchy from "../components/GroupHierarchy";
 import GroupList from "../components/GroupList";
 import MoveGroupToGroup from "../components/MoveGroupToGroup";
 import MovePersonToGroup from "../components/MovePersonToGroup";
@@ -20,6 +21,7 @@ const GroupsPage = () => {
       <GroupList onEdit={setEditingGroup} refreshTrigger={refreshTrigger} />
       <MovePersonToGroup onSave={handleSave} />
       <MoveGroupToGroup onSave={handleSave} />
+      <GroupHierarchy />
     </div>
   );
 };
